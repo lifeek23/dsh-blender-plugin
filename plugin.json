@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dsh-blender-codex",
+  "version": "0.1.0",
+  "description": "Separate Codex MCP support for DSH Blender; preserves the original DeepSeek Harness host.",
+  "license": "BSD-3-Clause",
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "interface": {
+        "displayName": "DSH Blender for Codex",
+        "shortDescription": "Local Blender modeling tools",
+        "capabilities": []
+      }
+    }
+  }
+}

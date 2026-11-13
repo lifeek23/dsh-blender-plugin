@@ -1,0 +1,18 @@
+{
+  "name": "dsh-blender-codex-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local Codex MCP adapter for the DSH Blender Gateway",
+  "engines": {
+    "node": ">=24.9.0"
+  },
+  "scripts": {
+    "start": "node launch.mjs",
+    "test": "node --test lib/lifecycle.test.mjs test/*.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "ajv": "^8.17.1"
+  }
+}

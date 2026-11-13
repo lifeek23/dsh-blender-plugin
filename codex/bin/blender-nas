@@ -1,0 +1,8 @@
+#!/bin/sh
+# Keep this NAS's Blender jobs short-lived and within its two-thread CPU budget.
+# CODEX_BLENDER_EXECUTABLE may point to another installed Blender or launcher.
+set -eu
+blender_executable=${CODEX_BLENDER_EXECUTABLE:-/vol1/1000/SSD/Woskspace/3d-workbench/bin/blender}
+export OMP_NUM_THREADS=2
+export OPENBLAS_NUM_THREADS=2
+exec "$blender_executable" --threads 2 "$@"
